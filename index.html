@@ -1,25 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="scss/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="scss/bootstrap-4.3.1-dist/css/bootstrap-grid.css">
     <link rel="stylesheet" href="scss/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="scss/googlefonts.css">
     <link rel="stylesheet" href="scss/styles.css">
     <title>Sajjad-Abuu Web-Developer</title>
 </head>
 <body>
-    <section class="hero-unit">
+    <section class="hero-unit dark-content d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-sm-10 col-md-6">
-                    <h1 class="my-name">I'm Sajjad Khalid(Sajj96)</h1>
-                    <h2 class="hero-unit-subheading">Web Designer &amp; Developer</h2>
+                    <h1 class="my-name">I'm Sajjad A Khalid</h1>
+                    <h2 class="hero-unit-subheading">Web Designer  &amp; Developer</h2>
                     <p>I enjoy building incredible web experience for clients. From idea to deployment, I can handle the entire process.</p>
                     <p>This site showcases my most recent and most favourite pieces of work.</p>
-                    <button id="portfolio-btn" class="btn btn-primary">Check out my portfolio</button>
+                    <button id="portfolio-btn" class="mt-5 btn btn-primary">Check out my portfolio</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>My Portfolio</h2>
+                    <p>Here's a selection of my favourite and most recent palces of work.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/loginpage.png')"></div>
+                            <div class="portfolio-card-information">
+                                <span class="portfolio-card-title">Portfolio Piece 1</span>
+                                <span class="portfolio-card-credits">Design - Development</span>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg')"></div>
+                            <div class="portfolio-card-information">
+                                <span class="portfolio-card-title">Portfolio Piece 2</span>
+                                <span class="portfolio-card-credits">Design</span>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="portfolio-card">
+                            <div class="portfolio-card-image" style="background-image: url('img/portfolio-placeholder.jpg')"></div>
+                            <div class="portfolio-card-information">
+                                <span class="portfolio-card-title">Portfolio Piece 3</span>
+                                <span class="portfolio-card-credits">Branding</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section content-section-side-image dark-content light-content">
+        <div class="content-side-image-container d-block d-sm-none" style="background-image: url('img/who-am-i-mobile.jpg')"></div>
+        <div class="content-side-image-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-9 offset-sm-1">
+                        <h2 class="content-section-side-image-heading"><img class="img-circle mb-4" src="img/Wallpaper.jpg" width="60" height="60" alt="Sajj96">
+                            <br>
+                            Who am I?
+                        </h2>
+                        <p>Sajjad Khalid Abubakari(24), holder of Bachelor degree of Health Information Systems at the University of Dodoma.</p>
+                        <p>I have experience in different programming languages like PHP, Java, Python, and VB.NET.
+                        I am currently focusing and dealing with Web designing and development in both frontend and backend stacks.</p>
+                        <p>Current I am using Laravel PHP framework for my PHP web applications and am doing Mobile App development with Ionic Framework.</p>
+                        <p>To see my full range of skills <a href="#">click here.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-side-image-container d-none d-sm-block" style="background-image: url('img/who-am-i-desktop.jpg')"></div>
+    </section>
+
+    <section class="content-section content-section-centered">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>Get in touch</h2>
+                    <p>Say hello or ask me <em>anything</em>.I'm always happy to help.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-sm-3 col-sm-6">
+                    <form class="contact-form" action="" method="get">
+                        <input class="contact-form-input" name="name" type="text" placeholder="Name" value="" required>
+                        <input class="contact-form-input" name="email" type="email" placeholder="Email Address" value="" required>
+                        <input class="contact-form-input" name="phone_number" type="text" placeholder="Phone Number" value="" required>
+                        <textarea name="query" id="" class="contact-form-input"></textarea>
+                        <div class="contact-form-actions">
+                            <input class="contact-form-checkbox-input" id="consent" type="checkbox" name="consent" value="1" required>
+                            <label for="consent" class="contact-form-checkbox-label">
+                                I agree to receive a direct response to my enquiry via the contact details I provided above.
+                            </label>
+                            <button class="btn btn-primary btn-block" type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

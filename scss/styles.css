@@ -1,23 +1,170 @@
-@import 'button';
-    
-  
-body{
+ /* Desktop view */
+html, body{
     font-family: 'Open Sans', sans-serif;
+    color: #423D3F;
 }
 
+h1{
+    font-size: 64px;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
 .hero-unit{
     background: url('../img/hero-unit-background-desktop.jpg');
     background-size: cover;
     background-position: center;
+
+    min-height: 100vh;
+    padding: 50px 0;
 }
 
 .hero-unit-subheading{
-    color: #9ACFF6;
+    color: rgb(5, 111, 187);
     text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 2.4px;
+    margin-bottom: 45px;
 }
 
 .btn{
     text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border: 0;
+    padding: 15px 23px;
 }
     
+.btn-primary{
+    background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
+}
+
+.dark-content{
+    color: #ffffff;
+}  
+
+p{
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.content-section{
+    padding: 80px 0;
+    /* background: url('../img/MessyDangerousFeline-size_restricted.gif');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center; */
+}
+ .content-section-centered{
+     text-align-last: center;
+ }
+
+ .portfolio-card{
+    margin-top: 60px;
+    background: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+   
+ }
+
+ .portfolio-card-image{
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+ }
+
+ .portfolio-card-information{
+     padding: 25px 5px;
+ }
+
+ .portfolio-card-title{
+    display: block;
+    font-size: 20px;
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    font-weight: 600;
+ }
+
+ .portfolio-card-credits{
+    display: block;
+    color: #A7A7A7;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+ }
+
+ .light-content{
+     background: #303848;
+ }
+
+ .content-section-side-image{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+ }
+
+ .content-side-image-content{
+     flex-grow: 1;
+     padding: 50px 0;
+ }
+
+ .content-side-image-container{
+    width: 250px;
+    min-height:500px;
+    background-size: cover;
+    background-position: center;
+ }
+
+ .img-circle{
+     border-radius:50%;
+ }
+
+ a{
+     color: #9ACFF6;
+     text-decoration: underline;
+ }
+
+ a:hover, :active, :focus{
+    color: darken(#9ACFF6, 15%);
+ }
+
+ /* Mobile view */
+ @media only screen and (max-width: 576px){
+    .hero-unit{
+        text-align: center;
+        background: url('../img/hero-unit-background-mobile.jpg');
+        background-size: cover;
+        background-position: center;
     
+    }
+    .my-name{
+        font-size: 45px;
+    }
+    .hero-unit-subheading{
+        font-size: 14px;
+    }
+
+    .content-section{
+        flex-direction: column;
+    }
+    .content-section-side-image{
+        flex-direction: column;
+    }
+    .content-side-image-container{
+        min-height: 80px;
+        width: 100%;
+        
+    }
+    .content-section-side-image-heading{
+        text-align: center;
+    }
+}
