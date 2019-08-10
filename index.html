@@ -28,7 +28,7 @@
         </div>
     </section>
 
-    <section class="content-section content-section-centered">
+    <section id="portfolio-section" class="content-section content-section-centered">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -82,7 +82,7 @@
                         <p>I have experience in different programming languages like PHP, Java, Python, and VB.NET.
                         I am currently focusing and dealing with Web designing and development in both frontend and backend stacks.</p>
                         <p>Current I am using Laravel PHP framework for my PHP web applications and am doing Mobile App development with Ionic Framework.</p>
-                        <p>To see my full range of skills <a href="#">click here.</a></p>
+                        <p>To see my full range of skills <a href="#" data-toggle="modal" data-target="#skillsmodal">click here.</a></p>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
             </div>
             <div class="row">
                 <div class="offset-sm-3 col-sm-6">
-                    <form class="contact-form" action="" method="get">
+                    <form class="contact-form" action="https://formspree.io/sajjabuu@gmail.com" method="post">
                         <input class="contact-form-input" name="name" type="text" placeholder="Name" value="" required>
                         <input class="contact-form-input" name="email" type="email" placeholder="Email Address" value="" required>
                         <input class="contact-form-input" name="phone_number" type="text" placeholder="Phone Number" value="" required>
@@ -121,6 +121,68 @@
     <footer class="footer">
         &copy; Sajjad A Khalid -2019
     </footer>
+
+    <div class="modal fade" id="skillsmodal" tabindex="-1" role="dialog" aria-labelledby="skillsmodallabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="skillsmodallabel">All Skillsets</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mt-1">Below are my current skills, updated as of <strong>August 2019</strong>.</p>
+                    <div class="skills-sets">
+                        <div class="skills">
+                            <h3 class="skill-heading">HTML</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">CSS (SCSS)</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">PHP(CODEIGNITER &amp; LARAVEL)</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">MYSQL</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">JAVA</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Intermediate</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">PYTHON</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <h3 class="skill-heading">ANDROID</h3>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Beginner</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <script src="js/jquery-3.4.1.min.js"></script>
+ <script src="scss/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
  <script src="js/scripts.js"></script>
 </body>
 </html>

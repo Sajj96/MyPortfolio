@@ -46,6 +46,10 @@ h2{
     background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
 }
 
+.bg-primary{
+    background: linear-gradient(105.63deg, #EA2626 -21.04%, #0029FF 147.44%);
+}
+
 .dark-content{
     color: #ffffff;
 }  
@@ -213,6 +217,19 @@ p{
      transition: opacity .3s, transform .3s;
  }
 
+ .skills-sets{
+     margin-top: 20px;
+     margin-bottom: 10px; 
+ }
+
+ .skill-heading{
+    text-transform: uppercase;
+    color: #797979;
+    letter-spacing: 1.6px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;     
+}
  /* Mobile view */
  @media only screen and (max-width: 576px){
     .hero-unit{
